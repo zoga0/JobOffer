@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Hiring Landing Page</title>
+  <style>
+    :root {
+      --primary: #3a3f93;
+      --text-dark: #1e1e1e;
+      --text-light: #666;
+      --bg-gradient: linear-gradient(135deg, #c0e8ce, #8fd3f4);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 40px;
+      padding: 40px;
+      max-width: 1100px;
+      width: 90%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 200px;
+      height: 200px;
+      background: #e1f7e9;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      right: -60px;
+      width: 250px;
+      height: 250px;
+      background: #d2f0ff;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .text-section {
+      flex: 1;
+      z-index: 1;
+    }
+
+    .text-section h1 {
+      font-size: 2.5rem;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    .text-section p {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .text-section a {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .text-section a:hover {
+      background-color: #2c2f77;
+    }
+
+    .image-section {
+      flex: 1;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-section img {
+      width: 100%;
+      max-width: 420px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .text-section h1 {
+        font-size: 2rem;
+      }
+
+      .text-section p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="text-section">
+      <h1>We're Hiring!</h1>
+      <p>Join our team and be part of a company that values innovation and excellence. Explore open roles and start your journey with us today.</p>
+      <a href="https://example.com/careers" target="_blank">Read more</a>
+    </div>
+    <div class="image-section">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/023/373/752/small_2x/cheerful-business-lady-working-on-laptop-in-office-asian-happy-beautiful-businesswoman-in-formal-suit-work-in-workplace-attractive-female-employee-office-worker-smile-photo.jpg" alt="Business Lady at Work">
+    </div>
+  </div>
+</body>
+</html>
